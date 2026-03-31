@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             msgDiv.className = 'system-message';
             msgDiv.textContent = message;
         } else {
+
             const isSentByMe = username === currentUser;
             msgDiv.className = `message ${isSentByMe ? 'msg-sent' : 'msg-received'}`;
 

@@ -3,6 +3,7 @@
     --bg-color: #0f172a;
     --panel-bg: rgba(30, 41, 59, 0.7);
     --panel-border: rgba(255, 255, 255, 0.1);
+
     --primary-color: #6366f1;
     --primary-hover: #4f46e5;
     --text-main: #f8fafc;
@@ -12,7 +13,7 @@
     --danger: #ef4444;
     --danger-hover: #dc2626;
     --success: #10b981;
-    
+
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
     --border-radius-lg: 16px;
@@ -37,7 +38,7 @@ body {
     position: relative;
     /* Animated subtle gradient background */
     background: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15), transparent 40%),
-                radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.1), transparent 40%);
+        radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.1), transparent 40%);
 }
 
 #app-container {
@@ -77,8 +78,15 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* --- Join Screen --- */
@@ -105,9 +113,17 @@ body {
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .header h1 {
@@ -167,9 +183,9 @@ input:focus {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-primary:hover {
@@ -220,8 +236,13 @@ input:focus {
 }
 
 @keyframes drift {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(30px, -30px) scale(1.1); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(30px, -30px) scale(1.1);
+    }
 }
 
 /* --- Chat Screen --- */
@@ -319,8 +340,15 @@ input:focus {
 }
 
 @keyframes messageEntry {
-    from { opacity: 0; transform: scale(0.9) translateY(10px); }
-    to { opacity: 1; transform: scale(1) translateY(0); }
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
 }
 
 .msg-sent {
@@ -364,7 +392,7 @@ input:focus {
 
 .system-message {
     align-self: center;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -415,8 +443,21 @@ input:focus {
 
 /* Responsive */
 @media (max-width: 768px) {
-    #app-container { padding: 0; }
-    .chat-container { border-radius: 0; border: none; }
-    .btn-secondary { padding: 6px 12px; font-size: 0.8rem; }
-    .message { max-width: 85%; }
+    #app-container {
+        padding: 0;
+    }
+
+    .chat-container {
+        border-radius: 0;
+        border: none;
+    }
+
+    .btn-secondary {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .message {
+        max-width: 85%;
+    }
 }
